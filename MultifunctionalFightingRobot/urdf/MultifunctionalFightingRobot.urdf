@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="MultifunctionalFightingRobot">
+  <link
+    name="base">
+    <inertial>
+      <origin
+        xyz="-2.0817E-17 -1.1102E-16 0.15883"
+        rpy="0 0 0" />
+      <mass
+        value="187.5" />
+      <inertia
+        ixx="10.822"
+        ixy="1.7577E-17"
+        ixz="5.6025E-16"
+        iyy="10.822"
+        iyz="-1.2155E-16"
+        izz="17.29" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/base.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/base.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="-7.63278329429795E-17 1.11022302462516E-16 -0.0119671699979421"
+        rpy="0 0 0" />
+      <mass
+        value="2.78539816339745" />
+      <inertia
+        ixx="0.0102841692489736"
+        ixy="-2.11238723272592E-19"
+        ixz="-1.91978189653409E-19"
+        iyy="0.0198066615964629"
+        iyz="2.56073642451006E-18"
+        izz="0.0106830749155716" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.6"
+      rpy="0 0 0" />
+    <parent
+      link="base" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.26319524312101 -1.96851218658978E-08 0"
+        rpy="0 0 0" />
+      <mass
+        value="6.40192161969389" />
+      <inertia
+        ixx="0.0124757254718562"
+        ixy="2.13310786920436E-08"
+        ixz="5.17006033421851E-18"
+        iyy="0.303012195518238"
+        iyz="-3.02199834695987E-07"
+        izz="0.298705824006169" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="revolute">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="-3.78496314179522E-07 0.0257838144662665 3.16988706394739E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.23746950027187" />
+      <inertia
+        ixx="0.00298712217690253"
+        ixy="-6.86108403631657E-11"
+        ixz="-6.67330548447687E-08"
+        iyy="0.00173824210730817"
+        iyz="-7.88426154937284E-19"
+        izz="0.00287903519839156" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="revolute">
+    <origin
+      xyz="0.6 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="-3.78496314290544E-07 -3.16988708615185E-08 0.0257838144662664"
+        rpy="0 0 0" />
+      <mass
+        value="1.23746950027187" />
+      <inertia
+        ixx="0.00298712217690252"
+        ixy="6.67330548458465E-08"
+        ixz="-6.86108377358554E-11"
+        iyy="0.00287903519839155"
+        iyz="3.49461930073097E-19"
+        izz="0.00173824210730817" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.2 0"
+      rpy="1.5708 1.5708 0" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="-1.11022302462516E-16 1.2508736491057E-08 0.260817127900269"
+        rpy="0 0 0" />
+      <mass
+        value="2.73036408745062" />
+      <inertia
+        ixx="0.186608222956886"
+        ixy="3.50811897225134E-11"
+        ixz="1.90256535057681E-18"
+        iyy="0.182048874612407"
+        iyz="1.6099119905157E-09"
+        izz="0.00586386259664019" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://MultifunctionalFightingRobot/meshes/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="revolute">
+    <origin
+      xyz="0 -0.68 0"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.14"
+      upper="3.14"
+      effort="10"
+      velocity="1" />
+  </joint>
+</robot>
